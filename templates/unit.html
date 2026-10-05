@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}{{ unit.title }} – கற்றல்{% endblock %}
+{% block styles %}
+<style>
+  .crumb { color:#fff; font-size:13.5px; margin-bottom:14px; }
+  .crumb a { color:#ffe9c7; }
+  .unithead { background:{{ part.color }}; color:#fff; border-radius:18px; padding:20px; margin-bottom:16px; }
+  .unithead h1 { font-size:21px; font-weight:800; }
+  .unithead .meta { margin-top:8px; font-size:13.5px; opacity:.95; }
+  .box { background:#fffaf2; border-radius:18px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,.2); margin-bottom:16px; }
+  .box h2 { font-size:17px; color:#b91c1c; margin-bottom:12px; }
+  .topics { list-style:none; }
+  .topics li { position:relative; padding:9px 0 9px 28px; border-bottom:1px dashed #eed9c3; font-size:14.5px; line-height:1.7; color:#4b362a; }
+  .topics li:last-child { border-bottom:none; }
+  .topics li::before { content:"➤"; position:absolute; left:4px; color:#ea580c; }
+  .note p.intro { font-size:15px; line-height:1.85; color:#4b362a; margin-bottom:14px; }
+  .sec h3 { font-size:15.5px; color:#a41212; margin:16px 0 8px; }
+  .sec ul { list-style:none; }
+  .sec li { position:relative; padding:7px 0 7px 26px; font-size:14.5px; line-height:1.75; color:#4b362a; border-bottom:1px dotted #f0dcc8; }
+  .sec li:last-child { border-bottom:none; }
+  .sec li::before { content:"✦"; position:absolute; left:4px; color:#d97706; }
+  .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  .tag { background:#fef3c7; color:#92400e; border-radius:16px; padding:5px 12px; font-size:12.5px; font-weight:600; }
+  .tip { background:#ecfdf5; border-left:4px solid #10b981; border-radius:10px; padding:12px 14px; font-size:14px; color:#065f46; margin-top:8px; line-height:1.7; }
+  .empty { color:#9a8578; font-size:14.5px; }
+  .back { display:inline-block; margin-top:6px; color:#fff; font-size:14px; font-weight:600; text-decoration:none; background:rgba(0,0,0,.25); padding:8px 16px; border-radius:18px; }
+</style>
+{% endblock %}
+{% block content %}
+<div class="crumb"><a href="/learn">கற்றல்</a> / <a href="/learn/{{ track.key }}">{{ track.label }}</a> / {{ part.title }}</div>
+
+<div class="unithead">
+  <h1>{{ unit.title }}</h1>
+  <div class="meta">{% if unit.questions %}{{ unit.questions }} கேள்விகள் • {% endif %}{{ part.level }}</div>
+</div>
+
+<div class="box">
+  <h2>📚 இந்த அலகின் தலைப்புகள்</h2>
+  <ul class="topics">
+    {% for t in unit.get('topics', []) %}<li>{{ t }}</li>{% endfor %}
+  </ul>
+</div>
+
+{% if note %}
+<div class="box note">
+  <h2>📝 படிக்கும் குறிப்புகள் (Tamil Notes)</h2>
+  {% if note.get('intro') %}<p class="intro">{{ note.intro }}</p>{% endif %}
+
+  {% for s in note.get('sections', []) %}
+  <div class="sec">
+    <h3>{{ s.heading }}</h3>
+    <ul>{% for p in s.get('points', []) %}<li>{{ p }}</li>{% endfor %}</ul>
+  </div>
+  {% endfor %}
+
+  {% if note.get('keywords') %}
+  <div class="sec">
+    <h3>🔑 முக்கியச் சொற்கள்</h3>
+    <div class="tags">{% for k in note.keywords %}<span class="tag">{{ k }}</span>{% endfor %}</div>
+  </div>
+  {% endif %}
+
+  {% if note.get('exam_tips') %}
+  <div class="sec">
+    <h3>🎯 தேர்வுக்கான குறிப்புகள்</h3>
+    {% for t in note.exam_tips %}<div class="tip">{{ t }}</div>{% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% else %}
+<div class="box">
+  <p class="empty">⏳ இந்த அலகுக்கான குறிப்புகள் இன்னும் தயாராகவில்லை. விரைவில் சேர்க்கப்படும் — பாடத்திட்டத் தலைப்புகளை வைத்து தயாரிப்பை மேற்கொள்ளலாம்.</p>
+</div>
+{% endif %}
+
+<a class="back" href="/learn/{{ track.key }}">← பிற அலகுகள்</a>
+{% endblock %}

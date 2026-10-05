@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}{{ track.label }} – கற்றல்{% endblock %}
+{% block styles %}
+<style>
+  .pagehead { color:#fff; text-align:center; margin-bottom:20px; }
+  .pagehead h1 { font-size:23px; font-weight:800; }
+  .pagehead p { font-size:14px; opacity:.92; margin-top:5px; }
+  .pagehead .stats { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:10px; }
+  .pagehead .pchip { background:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.45); border-radius:16px; padding:4px 13px; font-size:12.5px; font-weight:600; }
+  .part { background:#fffaf2; border-radius:20px; overflow:hidden; box-shadow:0 12px 34px rgba(0,0,0,.22); margin-bottom:20px; }
+  .part > header { padding:16px 20px; color:#fff; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .part > header h2 { font-size:17.5px; flex:1; min-width:200px; }
+  .badge { background:rgba(255,255,255,.22); border:1px solid rgba(255,255,255,.5); border-radius:20px; padding:4px 12px; font-size:12.5px; font-weight:600; }
+  .level { font-size:12.5px; opacity:.9; width:100%; }
+  .units { padding:14px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:10px; }
+  .unit {
+    display:block; background:#fff; border:1.5px solid #f0d9c0; border-radius:14px;
+    padding:14px 15px; text-decoration:none; color:#3b2a20; transition:.15s;
+  }
+  .unit:hover { border-color:#ea580c; box-shadow:0 4px 14px rgba(234,88,12,.15); transform:translateY(-2px); }
+  .unit b { display:block; font-size:14.5px; line-height:1.5; }
+  .unit .meta { display:flex; gap:8px; margin-top:8px; align-items:center; flex-wrap:wrap; }
+  .pill { font-size:11.5px; font-weight:700; border-radius:12px; padding:3px 9px; }
+  .pill.q { background:#fef3c7; color:#92400e; }
+  .pill.n { background:#dcfce7; color:#166534; }
+  .pill.non { background:#f1f5f9; color:#94a3b8; }
+  .crumb { color:#fff; font-size:13.5px; margin-bottom:14px; text-align:center; }
+  .crumb a { color:#ffe9c7; }
+</style>
+{% endblock %}
+{% block content %}
+<div class="crumb"><a href="/learn">← கற்றல் பிரிவு</a></div>
+
+<div class="pagehead">
+  <h1>📖 {{ track.label }}</h1>
+  <p>{{ syllabus.get('exam_short', '') }} – {{ syllabus.get('pattern', '') }}</p>
+  <div class="stats">
+    <span class="pchip">{{ stats.units }} அலகுகள்</span>
+    <span class="pchip">{{ stats.parts }} பகுதிகள்</span>
+    {% if stats.questions %}<span class="pchip">{{ stats.questions }} கேள்விகள்</span>{% endif %}
+  </div>
+</div>
+
+{% for part in syllabus.get('parts', []) %}
+<section class="part">
+  <header style="background:{{ part.color }}">
+    <h2>{{ part.title }}</h2>
+    {% if part.questions %}<span class="badge">{{ part.questions }} கேள்விகள்</span>{% endif %}
+    {% if part.alt %}<span class="badge">{{ part.alt }}</span>{% endif %}
+    <span class="level">தரம்: {{ part.level }}</span>
+  </header>
+  <div class="units">
+    {% for u in part.get('units', []) %}
+    <a class="unit" href="/learn/{{ track.key }}/{{ part.id }}/{{ u.id }}">
+      <b>{{ u.title }}</b>
+      <span class="meta">
+        {% if u.questions %}<span class="pill q">{{ u.questions }} கேள்விகள்</span>{% endif %}
+        {% if u.id in notes %}<span class="pill n">✓ குறிப்புகள்</span>{% else %}<span class="pill non">குறிப்புகள் விரைவில்</span>{% endif %}
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ meta.title }} – வினாத்தாள்{% endblock %}
+{% block styles %}
+<style>
+  .vhead { display:flex; align-items:center; gap:12px; color:#fff; margin-bottom:14px; flex-wrap:wrap; }
+  .vhead h1 { font-size:19px; font-weight:700; flex:1; min-width:220px; }
+  .vhead .sub { font-size:13px; opacity:.9; width:100%; }
+  .vbtn { border-radius:16px; padding:9px 16px; font-size:13.5px; font-weight:700; text-decoration:none; border:none; cursor:pointer; font-family:inherit; }
+  .vbtn.back { background:rgba(0,0,0,.3); color:#fff; }
+  .vbtn.dl { background:#fff; color:#b91c1c; }
+  .viewer {
+    background:#fff; border-radius:18px; overflow:hidden;
+    box-shadow:0 16px 44px rgba(0,0,0,.35); height:78vh;
+  }
+  .viewer iframe { width:100%; height:100%; border:none; display:block; }
+</style>
+{% endblock %}
+{% block content %}
+<div class="vhead">
+  <a class="vbtn back" href="/papers">← பட்டியல்</a>
+  <h1>📄 {{ meta.title }}</h1>
+  <a class="vbtn dl" href="/static/papers/{{ filename }}" download>⬇️ பதிவிறக்கு</a>
+  <span class="sub">{{ meta.exam }}{% if meta.year %} • {{ meta.year }}{% endif %}{% if meta.subject %} • {{ meta.subject }}{% endif %}</span>
+</div>
+<div class="viewer">
+  <iframe src="/static/papers/{{ filename }}#toolbar=1&navpanes=0" title="வினாத்தாள்"></iframe>
+</div>
+{% endblock %}

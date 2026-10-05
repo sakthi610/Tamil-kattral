@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}முகப்பு – TNPSC கற்றல் பயன்பாடு{% endblock %}
+{% block styles %}
+<style>
+  .hero { text-align:center; color:#fff; margin-bottom:24px; }
+  .hero h1 { font-size:26px; font-weight:800; text-shadow:0 2px 8px rgba(0,0,0,.3); }
+  .hero p { font-size:14.5px; opacity:.95; margin-top:6px; }
+  .stats { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:24px; }
+  .stat { background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3); color:#fff;
+          border-radius:14px; padding:10px 18px; text-align:center; min-width:110px; }
+  .stat b { display:block; font-size:21px; }
+  .stat span { font-size:12px; }
+  .sections { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
+  .sec {
+    background:#fffaf2; border-radius:20px; padding:24px 20px; text-decoration:none;
+    color:#3b2a20; box-shadow:0 14px 36px rgba(0,0,0,.25); transition:.2s; border:2px solid transparent;
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .sec:hover { transform:translateY(-5px); border-color:#f59e0b; }
+  .sec .icon { font-size:38px; }
+  .sec h2 { font-size:18px; }
+  .sec p { font-size:13.5px; color:#7a6455; line-height:1.6; }
+  .sec .go { margin-top:auto; font-size:14px; font-weight:700; color:#c2410c; }
+  .trackline { font-size:12.5px; color:#a41212; font-weight:600; }
+</style>
+{% endblock %}
+{% block content %}
+<div class="hero">
+  <h1>📚 TNPSC தயாரிப்பு மையம்</h1>
+  <p>குரூப் 2/2A & உதவி பொறியாளர் (EEE) – கற்றல், வினாத்தாள்கள், AI சந்தேக நீக்கல்</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><b>{{ stats.tracks }}</b><span>தேர்வுகள்</span></div>
+  <div class="stat"><b>{{ stats.units }}</b><span>கற்றல் அலகுகள்</span></div>
+  <div class="stat"><b>{{ stats.papers }}</b><span>முந்தைய வினாத்தாள்கள்</span></div>
+</div>
+
+<div class="sections">
+  <a class="sec" href="/learn">
+    <span class="icon">📖</span>
+    <h2>கற்றல் பிரிவு</h2>
+    <p>இரு தேர்வுகளின் பாடத்திட்ட அலகுகள் + ஒவ்வொரு அலகிற்கும் தமிழ் படிக்கும் குறிப்புகள்.</p>
+    {% for t in tracks %}<span class="trackline">{% if t.key == 'tnpsc' %}🏛️{% else %}⚡{% endif %} {{ t.label }} – {{ t.stats.units }} அலகுகள்</span>{% endfor %}
+    <span class="go">தொடங்கு →</span>
+  </a>
+  <a class="sec" href="/papers">
+    <span class="icon">🗂️</span>
+    <h2>முந்தைய வினாத்தாள்கள்</h2>
+    <p>குரூப் 2 & AE-EEE வினாத்தாள்கள் (PDF) – இரு பிரிவுகளாக வரிசைப்படுத்தப்பட்டு, இணையதளத்திலேயே படிக்கலாம்.</p>
+    <span class="go">பார்க்க →</span>
+  </a>
+  <a class="sec" href="/chat">
+    <span class="icon">🤖</span>
+    <h2>AI சந்தேக நீக்கும் சாட்போட்</h2>
+    <p>தமிழில் கேளுங்கள் – இரு தேர்வுகளின் பாடத்திட்டத்தை அறிந்த AI ஆசிரியர் உடனுக்குடன் விளக்கம் தருவார்.</p>
+    <span class="go">பேசத் தொடங்கு →</span>
+  </a>
+</div>
+{% endblock %}

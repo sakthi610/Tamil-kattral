@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}TNPSC கற்றல் பயன்பாடு{% endblock %}</title>
+<link rel="icon" href="/static/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Noto Sans Tamil', sans-serif;
+    background: linear-gradient(135deg, #7b1e1e 0%, #b73e1b 45%, #e88b1d 100%);
+    min-height:100vh;
+  }
+  .container { max-width:860px; margin:0 auto; padding:18px 16px 60px; }
+  nav {
+    background:rgba(0,0,0,.28); backdrop-filter:blur(6px);
+    border-radius:18px; padding:12px 16px; margin-bottom:22px;
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  }
+  .brand { display:flex; align-items:center; gap:10px; margin-right:auto; text-decoration:none; color:#fff; }
+  .brand .avatar {
+    width:42px; height:42px; border-radius:50%; background:#fff;
+    display:flex; align-items:center; justify-content:center; overflow:hidden; flex-shrink:0;
+  }
+  .brand .avatar img { width:100%; height:100%; object-fit:cover; }
+  .brand .avatar .fallback { display:none; font-size:20px; }
+  .brand strong { font-size:16.5px; font-weight:700; }
+  .brand small { display:block; font-size:11px; opacity:.8; font-weight:400; }
+  nav a.navlink {
+    color:#fff; text-decoration:none; font-size:14.5px; font-weight:600;
+    padding:8px 15px; border-radius:20px; transition:.2s; border:1.5px solid transparent;
+  }
+  nav a.navlink:hover { background:rgba(255,255,255,.16); }
+  nav a.navlink.active { background:#fff; color:#b91c1c; }
+  .card {
+    background:#fffaf2; border-radius:20px; padding:22px;
+    box-shadow:0 12px 34px rgba(0,0,0,.22); margin-bottom:18px;
+  }
+  .flash {
+    padding:12px 16px; border-radius:12px; margin-bottom:16px; font-size:14.5px; font-weight:600;
+  }
+  .flash.success { background:#dcfce7; color:#166534; }
+  .flash.error { background:#fee2e2; color:#991b1b; }
+  footer.appfooter { text-align:center; color:rgba(255,255,255,.85); font-size:12.5px; margin-top:34px; }
+  @media (max-width:620px) { nav { gap:8px; } nav a.navlink { font-size:13.5px; padding:7px 11px; } }
+</style>
+{% block styles %}{% endblock %}
+</head>
+<body>
+<div class="container">
+  <nav>
+    <a class="brand" href="/">
+      <span class="avatar"><img src="/static/logo.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback">🦚</span></span>
+      <span><strong>TNPSC குரூப் 2/2A</strong><small>கற்றல் பயன்பாடு</small></span>
+    </a>
+    <a class="navlink {% if request.path == '/' %}active{% endif %}" href="/">முகப்பு</a>
+    <a class="navlink {% if request.path.startswith('/learn') %}active{% endif %}" href="/learn">கற்றல்</a>
+    <a class="navlink {% if request.path.startswith('/papers') %}active{% endif %}" href="/papers">வினாத்தாள்கள்</a>
+    <a class="navlink {% if request.path.startswith('/chat') %}active{% endif %}" href="/chat">AI சந்தேகம்</a>
+  </nav>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+      <div class="flash {{ category }}">{{ message }}</div>
+    {% endfor %}
+  {% endwith %}
+
+  {% block content %}{% endblock %}
+
+  <footer class="appfooter">⚡ Sarvam-105B AI • TNPSC Group 2/2A • உங்கள் தமிழ் கற்றல் துணை</footer>
+</div>
+{% block scripts %}{% endblock %}
+</body>
+</html>
