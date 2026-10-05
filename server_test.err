@@ -1,0 +1,48 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.219.204.127:5000
+Press CTRL+C to quit
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 942-977-107
+ * Detected change in 'C:\\Users\\ADMIN\\Desktop\\Tamil\\scripts\\e2e_test.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 942-977-107
+127.0.0.1 - - [04/Oct/2026 21:47:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:30] "GET /static/logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Oct/2026 21:47:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:31] "GET /static/logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Oct/2026 21:47:31] "GET /static/logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/tnpsc HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/ae HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/tnpsc/gs/gs1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/tnpsc/tamil/ta1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/ae/eee/ae1 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/ae/eee/ae10 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /papers HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /chat HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /papers HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "POST /papers/upload HTTP/1.1" 404 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "POST /papers/delete HTTP/1.1" 404 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /papers/view/2025_tamil_group2.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /papers/view/2025_gs_group2.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /papers/view/ae_eee_2018.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /papers/view/ae_eee_2025.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /papers/view/ae_eee_2024_q3.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /papers/view/..%2F..%2Fapp.py HTTP/1.1" 404 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/tnpsc HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/ae HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /learn/ae/eee/ae5 HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:40] "GET /api/kural/random HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:43] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:44] "GET /learn HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:44] "GET /static/logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Oct/2026 21:47:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:46] "GET /static/logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Oct/2026 21:47:47] "GET /learn HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 21:47:47] "GET /static/logo.png HTTP/1.1" 304 -
