@@ -1,0 +1,85 @@
+{
+  "papers": [
+    {
+      "file": "2025_tamil_group2.pdf",
+      "title": "2025 – பொதுத்தமிழ் வினாத்தாள்",
+      "exam": "TNPSC குரூப் 2 & 2A – முதல்நிலை",
+      "year": 2025,
+      "subject": "தமிழ்",
+      "track": "tnpsc",
+      "pages": 42
+    },
+    {
+      "file": "2025_gs_group2.pdf",
+      "title": "2025 – பொது அறிவு வினாத்தாள் (GS)",
+      "exam": "TNPSC குரூப் 2 & 2A – முதல்நிலை",
+      "year": 2025,
+      "subject": "பொது அறிவு",
+      "track": "tnpsc",
+      "pages": 89
+    },
+    {
+      "file": "ae_eee_2018.pdf",
+      "title": "AE EEE – 2018 வினாத்தாள்",
+      "exam": "TNPSC உதவி பொறியாளர் (EEE)",
+      "year": 2018,
+      "subject": "EEE",
+      "track": "ae",
+      "pages": 40
+    },
+    {
+      "file": "ae_eee_2019.pdf",
+      "title": "AE EEE – 2019 வினாத்தாள்",
+      "exam": "TNPSC உதவி பொறியாளர் (EEE)",
+      "year": 2019,
+      "subject": "EEE",
+      "track": "ae",
+      "pages": 40
+    },
+    {
+      "file": "ae_eee_2022.pdf",
+      "title": "AE EEE – 2022 வினாத்தாள்",
+      "exam": "TNPSC உதவி பொறியாளர் (EEE)",
+      "year": 2022,
+      "subject": "EEE",
+      "track": "ae",
+      "pages": 64
+    },
+    {
+      "file": "ae_eee_2024.pdf",
+      "title": "AE EEE – 2024 வினாத்தாள்",
+      "exam": "TNPSC உதவி பொறியாளர் (EEE)",
+      "year": 2024,
+      "subject": "EEE",
+      "track": "ae",
+      "pages": 56
+    },
+    {
+      "file": "ae_eee_2024_q2.pdf",
+      "title": "AE EEE – 2024 வினாத்தாள் (Q2)",
+      "exam": "TNPSC உதவி பொறியாளர் (EEE)",
+      "year": 2024,
+      "subject": "EEE",
+      "track": "ae",
+      "pages": 59
+    },
+    {
+      "file": "ae_eee_2024_q3.pdf",
+      "title": "AE EEE – 2024 வினாத்தாள் (Q3)",
+      "exam": "TNPSC உதவி பொறியாளர் (EEE)",
+      "year": 2024,
+      "subject": "EEE",
+      "track": "ae",
+      "pages": 62
+    },
+    {
+      "file": "ae_eee_2025.pdf",
+      "title": "AE EEE – 2025 வினாத்தாள்",
+      "exam": "TNPSC உதவி பொறியாளர் (EEE)",
+      "year": 2025,
+      "subject": "EEE",
+      "track": "ae",
+      "pages": 62
+    }
+  ]
+}

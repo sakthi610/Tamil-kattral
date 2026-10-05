@@ -1,0 +1,56 @@
+{
+  "intro": "TNPSC AE EEE தேர்வுக்கு மின்சார அமைப்புகள் (Power Systems) அலகு மிகவும் முக்கியமானது. இதில் மின் உற்பத்தி முதல் பாதுகாப்பு சாதனங்கள் வரை அனைத்து அடிப்படை மற்றும் தொழில்நுட்ப கருத்துகளும் அடங்கும்.",
+  "sections": [
+    {
+      "heading": "மின் உற்பத்தி மற்றும் அன்னியூர்த்தி அமைப்புகள்",
+      "points": [
+        "மின் உற்பத்தி நிலையங்கள் மற்றும் அவற்றின் திறன் அமைப்புகள் (Transmission & Distribution).",
+        "அதிக அழுத்த அன்னியூர்த்தி (EHV) அமைப்புகளின் நன்மைகள் மற்றும் பயன்பாடுகள்.",
+        "அன்னியூர்த்தி வகைகளில் தேய்ப்பு காரணிகள் (sag மற்றும் tension) கணக்கீடுகள்."
+      ]
+    },
+    {
+      "heading": "பாதுகாப்பு சாதனங்கள் மற்றும் நிலைபேழை",
+      "points": [
+        "CT/PT (Current Transformer, Potential Transformer) பயன்பாடுகள் மற்றும் பாதுகாப்பு.",
+        "IDMT, differential, மற்றும் distance relays-இன் அடிப்படை செயல்பாடுகள்.",
+        "Circuit breakers மற்றும் switchgear-இன் முக்கியத்துவம்."
+      ]
+    },
+    {
+      "heading": "கேபிள்கள், பவர் ஃபேக்டர் மற்றும் இழப்புகள்",
+      "points": [
+        "கேபிள்கள், கண்ணாடி தூண்டி (glassware) பண்புகள் மற்றும் insulation வகைகள்.",
+        "பவர் ஃபேக்டர் (Power factor) மேம்படுத்தும் முறைகள் மற்றும் வரி இழப்புகள் (line losses).",
+        "3-phase அமைப்புகளில் symmetrical மற்றும் unsymmetrical fault analysis."
+      ]
+    },
+    {
+      "heading": "நவீன மின்சார அமைப்புகள் மற்றும் SCADA",
+      "points": [
+        "வலையமைப்பு நிலைத்தன்மை (Grid stability) மற்றும் self-reclosing (auto-reclosing) முறைகள்.",
+        "SCADA அமைப்பின் அடிப்படைகள் மற்றும் கண்காணிப்பு முறை.",
+        "புதிய மாற்று ஆற்றல் (Renewable energy) இணைப்புகள் மற்றும் மின்சார கட்டமைப்பு."
+      ]
+    }
+  ],
+  "keywords": [
+    "EHV",
+    "CT/PT",
+    "Relay",
+    "Switchgear",
+    "Sag",
+    "Power Factor",
+    "Symmetrical Fault",
+    "SCADA",
+    "Auto-reclosing",
+    "Renewable Energy"
+  ],
+  "exam_tips": [
+    "Relay வகைகள் (IDMT, Differential, Distance) மற்றும் அவற்றின் பயன்பாட்டு இடங்களை அட்டவணைப்படுத்தி நினைவில் கொள்ளவும்.",
+    "EHV அமைப்புகளுக்கான தேய்ப்பு (sag) மற்றும் tension கணக்கீட்டு சூத்திரங்களை (formulas) நன்கு பயிற்சி செய்யவும்.",
+    "Grid stability மற்றும் auto-reclosing-இன் செயல்பாட்டு முறைகளை TNPSC AE தேர்வு முறையில் வினாக்கள் அடிக்கடி வரும்."
+  ],
+  "unit_id": "ae5",
+  "title": "அலகு V: மின்சார அமைப்புகள் (Power Systems)"
+}

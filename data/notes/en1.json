@@ -1,0 +1,62 @@
+{
+  "intro": "Unit I of TNPSC Group 2/2A Prelims General English covers essential grammar concepts including Parts of Speech, Sentence Patterns, and Sentence Transformations. Mastering these topics is crucial for clearing the objective-type questions in the exam.",
+  "sections": [
+    {
+      "heading": "Parts of Speech & Concord",
+      "points": [
+        "Parts of Speech include Noun, Pronoun, Verb, Adjective, Adverb, Preposition, Conjunction, and Interjection.",
+        "Subject-verb agreement is a key aspect of concord; a singular subject requires a singular verb.",
+        "Articles (a, an, the) are used to define the definiteness of a noun.",
+        "Pronouns must agree with their antecedents in gender, number, and person."
+      ]
+    },
+    {
+      "heading": "Tense & Voice",
+      "points": [
+        "Tenses indicate the time of action: Present, Past, and Future.",
+        "Active voice focuses on the subject performing the action, while passive voice focuses on the object receiving the action.",
+        "The passive voice formula is: Object + be + past participle + by + Subject.",
+        "Tense rules must be strictly followed in direct and indirect speech transformations."
+      ]
+    },
+    {
+      "heading": "Sentence Types & Patterns",
+      "points": [
+        "Four main sentence types: Statement (declarative), Interrogative (question), Imperative (command), and Exclamatory.",
+        "Sentence patterns are categorized as Simple, Compound, and Complex based on clauses.",
+        "A simple sentence has one independent clause and no dependent clauses.",
+        "A complex sentence consists of one independent clause and at least one dependent clause."
+      ]
+    },
+    {
+      "heading": "Sentence Transformation & Synthesis",
+      "points": [
+        "Transforming an Exclamatory sentence (e.g., 'What a beautiful garden!') into a Statement (e.g., 'It is a very beautiful garden.').",
+        "Changing a Statement into an Interrogative by adding an auxiliary verb or using inversion.",
+        "Synthesis of Sentences involves combining two or more simple sentences into a single complex or compound sentence using conjunctions or relative pronouns.",
+        "Negatives are formed by adding 'not' or using negative words like 'never', 'hardly', or 'scarcely' with auxiliary verbs."
+      ]
+    }
+  ],
+  "keywords": [
+    "Concord",
+    "Active Voice",
+    "Passive Voice",
+    "Simple Sentence",
+    "Compound Sentence",
+    "Complex Sentence",
+    "Direct Speech",
+    "Indirect Speech",
+    "Question Tags",
+    "Degrees of Comparison",
+    "Infinitives",
+    "Gerunds"
+  ],
+  "exam_tips": [
+    "Always read the entire sentence carefully before selecting an answer to avoid traps in Subject-Verb Agreement.",
+    "Practice converting between Direct and Indirect Speech, as TNPSC frequently tests tense backshifting rules.",
+    "Memorize the standard formats for transforming Exclamatory and Imperative sentences, as these are common in objective exams."
+  ],
+  "unit_id": "en1",
+  "title": "Unit I: Grammar"
+}

@@ -1,0 +1,68 @@
+{
+  "intro": "இந்த அலகு மின்பொறியியலின் (EEE) மிக முக்கியமான பகுதியான மின்இயந்திரங்களை உள்ளடக்கியது. TNPSC AE தேர்வுக்கு transformers, DC machines, induction motors, synchronous machines மற்றும் சிறப்பு இயந்திரங்களின் அடிப்படை செயல்பாடுகள், சோதனைகள் மற்றும் பண்புகளைப் புரிந்துகொள்வது அவசியம்.",
+  "sections": [
+    {
+      "heading": "மாற்றுதிசை மாற்றிகள் (Transformers)",
+      "points": [
+        "Equivalent circuit: Core losses (இரும்பு இழப்பு) மற்றும் copper losses (செப்புக் இழப்பு) மூலம் குறிக்கப்படும் ideal model.",
+        "OC & SC tests: Open Circuit test மூலம் core loss, Short Circuit test மூலம் copper loss மற்றும் equivalent impedance கண்டறியப்படுகிறது.",
+        "Efficiency மற்றும் regulation: Load இல்லாத போது அதிக efficiency ஆகவும், load மாறும்போது output voltage regulation குறைவாகவும் இருக்க வேண்டும்."
+      ]
+    },
+    {
+      "heading": "DC இயந்திரங்கள் (DC Machines)",
+      "points": [
+        "Excitation: Separately excited, shunt, series மற்றும் compound என நான்கு வகை excitation முறைகள் உள்ளன.",
+        "Characteristics: DC motor-ல் torque-speed பண்பு நேர்கோட்டிலும், DC generator-ல் நேர்கோட்டிற்கு எதிராகவும் அமையும்.",
+        "Speed control: armature voltage, field flux, அல்லது armature resistance-ஐ மாற்றுவதன் மூலம் motor வேகத்தைக் கட்டுப்படுத்தலாம்.",
+        "Starters: DC motor-ஐ நேரடியாக start செய்தால் அதிக current பாய்ந்து சேதமாகும்; அதனால் starters (3-point, 4-point) பயன்படுத்தப்படுகிறது."
+      ]
+    },
+    {
+      "heading": "தூண்டல் மோட்டார்கள் (Induction Motors)",
+      "points": [
+        "Rotating magnetic field: 3-phase supply-ல் இருந்து உருவாக்கப்படும் சுழலும் காந்தப்புலம் (RMF) rotor-ஐ சுழலச் செய்கிறது.",
+        "Torque-slip: Slip 0 (synchronous speed) ஆக இருக்கும்போது torque பூஜ்ஜியம், slip 1 ( standstill) ஆக இருக்கும்போது அதிகபட்ச torque கிடைக்கும்.",
+        "Tests: No-load test மூலம் core loss மற்றும் magnetizing branch, Blocked rotor test மூலம் copper loss மற்றும் leakage impedance கண்டறியப்படுகிறது.",
+        "Speed control: V/f control, pole changing, மற்றும் cascade முறைகள் மூலம் வேகத்தைக் குறைக்கலாம்."
+      ]
+    },
+    {
+      "heading": "ஒருங்கிணைந்த இயந்திரங்கள் (Synchronous Machines)",
+      "points": [
+        "EMF equation: E = 4.44 * f * N * Φ * K_d * K_p மூலம் generated voltage கணக்கிடப்படுகிறது.",
+        "Synchronizing: ஏற்கனவே ஓடிக்கொண்டிருக்கும் grid-உடன் ஒரு generator-ஐ இணைக்கும் போது phase, frequency மற்றும் voltage ஆகியவை சமமாக இருக்க வேண்டும்.",
+        "V-curve: Armature current மற்றும் field current-க்கு இடையிலான வரைபடம் V-வடிவத்தில் அமைவதால் V-curve எனப்படுகிறது.",
+        "Parallel operation: Load-ஐப் பகிர்ந்து கொள்ளும் போது governor மற்றும் AVR (Automatic Voltage Regulator) மிக முக்கியம்."
+      ]
+    },
+    {
+      "heading": "சிறப்பு இயந்திரங்கள் மற்றும் வெப்ப மேலாண்மை",
+      "points": [
+        "சிறப்பு இயந்திரங்கள்: Universal motor (AC/DC), Stepper motor (step-by-step rotation), BLDC (brushless DC), SRM (Switched Reluctance Motor).",
+        "சார்பு இயந்திரங்கள்: Reluctance motor, hysteresis motor ஆகியவை synchronous motors-ன் வகைகளாகும்.",
+        "Heat losses: Core loss (hysteresis & eddy current), copper loss (I^2R), friction & windage, மற்றும் stray losses ஆகியவை இயந்திரத்தின் வெப்பத்தை அதிகரிக்கும்.",
+        "வெப்ப மேலாண்மை: Cooling fans, hydrogen cooling (பெரிய generators-ல்) மற்றும் proper ventilation மூலம் வெப்பத்தை வெளியேற்றி இயந்திரத்தின் ஆயுளை நீட்டிக்கலாம்."
+      ]
+    }
+  ],
+  "keywords": [
+    "Rotating magnetic field",
+    "Torque-slip characteristics",
+    "Synchronous speed",
+    "EMF equation",
+    "V-curve",
+    "OC & SC tests",
+    "Universal motor",
+    "Heat losses",
+    "Cooling methods",
+    "Parallel operation"
+  ],
+  "exam_tips": [
+    "TNPSC தேர்வில் OC test மூலம் core loss மற்றும் SC test மூலம் copper loss-ஐக் கண்டறியும் கேள்விகள் அதிகம் வரும், இதை நன்கு நினைவில் கொள்க.",
+    "Induction motor-ன் torque-slip curve மற்றும் synchronous motor-ன் V-curve வரைபடங்களை (graphs) அடிக்கடி வரைந்து பயிற்சி செய்யவும்.",
+    "Transformers-ன் equivalent circuit மற்றும் DC machines-ன் excitation முறைகள் குறித்த objective type (MCQ) கேள்விகள் தேர்வில் அடிக்கடி கேட்கப்படும்."
+  ],
+  "unit_id": "ae4",
+  "title": "அலகு IV: மின்இயந்திரங்கள் (Electrical Machines)"
+}

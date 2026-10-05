@@ -1,0 +1,140 @@
+{
+  "exam": "TNPSC உதவி பொறியாளர் (Assistant Engineer) – மின்னியல் & மின்னணுப் பொறியியல் (EEE)",
+  "exam_short": "TNPSC AE – EEE (உதவி பொறியாளர்)",
+  "code": "AE-EEE",
+  "pattern": "பட்டப்படிப்புத்தரம் (Degree Standard) – மின்பொறியியல் பாடங்கள்",
+  "breakdown": "அதிகாரப்பூர்வப் பாடத்திட்டத்தின் அடிப்படையில் அமைக்கப்பட்ட அலகுகள்",
+  "parts": [
+    {
+      "id": "eee",
+      "title": "பகுதி அ: மின்பொறியியல் (EEE) – பட்டப்படிப்புத்தரம்",
+      "level": "பட்டப்படிப்புத்தரம் (Degree Standard)",
+      "questions": null,
+      "color": "#1d4ed8",
+      "units": [
+        {
+          "id": "ae1",
+          "title": "அலகு I: மின்சுற்றுகள் (Electric Circuits)",
+          "topics": [
+            "கூட்டு மற்றும் பிரிவு முறைகள், நோட்டன் தேர்வு",
+            "KCL, KVL, முதல் மற்றும் இரண்டாம் வகை காரணியம்",
+            "நெட்வொர்க் தேற்றங்கள்: Thevenin, Norton, Superposition, Maximum Power Transfer, Reciprocity, Millman",
+            "நிலையான & மாறும் மின்சுற்றுகள்: RL, RC, RLC transient analysis, step & impulse response",
+            "ஒலிவும் வினைதானும் (Steady State AC Analysis), ஒருங்கிணைவும் அலைவும் (Resonance), Q factor, தரம் தேர்வு (Bandwidth)",
+            "கூட்டுச் சுற்றுகள் (Mesh), முனை மின்னழுத்த முறை (Nodal), மாற்று முனைக் கணக்கீடு (Supermesh/Supernode)",
+            "இரு-நுழைவு சுற்றுகள் (Two-port networks): Z, Y, h, ABCD அளவுகோல்கள், இணைப்புகள்",
+            "லாப்லஸ் மாற்றம் மூலம் சுற்று பகுப்பாய்வு, அடுத்தடுத்த (Cascade) சுற்றுகள்"
+          ]
+        },
+        {
+          "id": "ae2",
+          "title": "அலகு II: மின்காந்தப் புலங்கள் (Electromagnetic Fields)",
+          "topics": [
+            "மின்னிசைவு (Electrostatics): Coulomb's law, மின்னிசைதல் புலம், Gauss's law, மின்னோட்டம், தன்மின்னிசைவு (Capacitance)",
+            "மின்பொருள்கள் (Dielectrics), மின்னோட்டப் புலம், பெர்மியின் விதி",
+            "மாங்கீதப் புலம் (Magnetostatics): Biot-Savart law, Ampere's law, மாங்கீதத் தாங்கி புலங்கள்",
+            "காந்தச் சுற்றுகள் (Magnetic circuits): MMF, தாங்குதிறன் (Reluctance), காந்த ஊடுருவல்",
+            "இயங்கு மின்னிசைவு (Electromagnetic Induction), புகார் விதி (Faraday), Lenz's law, மின்தூண்டல்",
+            "மாக்ஸ்வெல் சமன்பாடுகள், அலைகள் பரவல், polarization, கரையான் (Skin effect)"
+          ]
+        },
+        {
+          "id": "ae3",
+          "title": "அலகு III: சமிக்ஞைகளும் அமைப்புகளும் (Signals & Systems)",
+          "topics": [
+            "சமிக்ஞை வகைகள்: நடப்பு/இடைவெளி, ஒற்றை/இரட்டை, periodic, deterministic, random",
+            "LTI அமைப்புகள், உயர்வு-பதில் (Impulse response), சுருள் முறை (Convolution)",
+            "நிலையான-நிலை பதில், நிலையான செயல்முறை (Steady state), convolution sum/integral",
+            "Fourier series & Fourier transform, Laplace transform, அலைவரைபடங்கள் (ROC)",
+            "Z-transform (அடிப்படை), sampling theorem, aliasing",
+            "அமைப்பு பண்புகள்: causality, stability, linearity, time-invariance"
+          ]
+        },
+        {
+          "id": "ae4",
+          "title": "அலகு IV: மின்இயந்திரங்கள் (Electrical Machines)",
+          "topics": [
+            "மாற்றுதிசை மாற்றிகள் (Transformers): equivalent circuit, OC & SC tests, efficiency, regulation, கூட்டுச் செயல்பாடு",
+            "DC இயந்திரங்கள்: உராய்வு & உந்துகோல் excitation, மோட்டார்/ஜெனரேட்டர் பண்புகள், speed control, starters",
+            "தூண்டல் மோட்டார்கள் (Induction motors): rotating magnetic field, torque-slip characteristics, no-load & blocked rotor tests, starting & speed control",
+            "ஒருங்கிணைந்த இயந்திரங்கள் (Synchronous machines): EMF equation, synchronizing, V-curve, hunting, parallel operation",
+            "சிறப்பு இயந்திரங்கள்: universal motor, stepper motor, BLDC, SRM, சார்பு இயந்திரங்கள்",
+            "மின்இயந்திரங்களின் செயல்திறன், heat losses, வெப்ப மேலாண்மை"
+          ]
+        },
+        {
+          "id": "ae5",
+          "title": "அலகு V: மின்சார அமைப்புகள் (Power Systems)",
+          "topics": [
+            "மின்உற்பத்தி, அன்னியூர்த்தி வகைகள், திறன் அமைப்புகள் (transmission & distribution)",
+            "அதிக அழுத்த அன்னியூர்த்தி (EHV), underground & overhead lines, தேய்ப்பு காரணிகள் (sag, tension)",
+            "பொருளாதார அன்னியூர்த்தி, பன்முனை அமைப்புகள் (3-phase), symmetrical & unsymmetrical fault analysis",
+            "பாதுகாப்பு: relays (IDMT, differential, distance), circuit breakers, CT/PT, நிலைபேழை (switchgear), இடுகை பாதுகாப்பு",
+            "கேபிள்கள், கண்ணாடி தூண்டி பண்புகள், insulation, power factor improvement, வரி இழப்புகள்",
+            "வலையமைப்பு நிலைத்தன்மை, சுயமாக்குதல் (auto-reclosing), SCADA அடிப்படைகள், புதிய மாற்று ஆற்றல் இணைப்பு"
+          ]
+        },
+        {
+          "id": "ae6",
+          "title": "அலகு VI: கட்டுப்பாட்டு அமைப்புகள் (Control Systems)",
+          "topics": [
+            "block diagram, signal flow graph, Mason's gain formula, transfer function",
+            "தனிவிசை பதில் (Time domain): order, type, steady state error, error constants",
+            "ஸ்திரத்தன்மை ஆய்வு: Routh-Hurwitz, Root locus, Bode plot, Nyquist criterion, gain & phase margin",
+            "State space analysis, controllability & observability, state transition matrix",
+            "ஈடுகள் & சீரமைப்புகள் (Compensators & Controllers): PID, P, PI, PD, lead-lag",
+            "ஆய்வுக் கருவிகள்: oscilloscope, function generator, frequency response analyzers"
+          ]
+        },
+        {
+          "id": "ae7",
+          "title": "அலகு VII: மின்அளவீடும் மின்னணு அளவீடும் (Measurements)",
+          "topics": [
+            "அளவீட்டு முறைகள்: direct/indirect, comparison, deflection, null methods, பிழைகள் & அளவீட்டு வரம்புகள்",
+            "நிலையான & மாறும் கருவிகள்: PMMC, MI, dynamometer, electrostatic, hot-wire அளவீட்டுகள்",
+            "மின்னோட்டம் & மின்னழுத்த அளவீடு, ஆர்க் முறைகள் (potential & current transformers)",
+            "நீளும் முறை (Bridge methods): Wheatstone, Kelvin, Schering, Maxwell, Hay, Anderson",
+            "மின்சார ஆற்றல் & ஆற்றல் காரணி அளவீடு, energy meters, PMU, power quality meters",
+            "oscilloscope, digital multimeters, LCR meter, CT saturation, instrument errors"
+          ]
+        },
+        {
+          "id": "ae8",
+          "title": "அலகு VIII: அனலோக் & டிஜிட்டல் மின்னணுவியல்",
+          "topics": [
+            "டையோடுகள், டிரான்சிஸ்டர், BJT, FET, MOSFET – சுய-விசை முறைகள், biasing",
+            "வலுவூட்டிகள் (Amplifiers): CE, CB, CC, differential, op-amp applications (inverting, non-inverting, integrator, differentiator, comparator, active filters)",
+            "அலைஉருவாக்கி (Oscillators): Barkhausen, Colpitts, Hartley, crystal",
+            "Digital: Boolean algebra, K-map, combinational circuits (MUX, decoder, encoder, adders)",
+            "Sequential circuits: flip-flops, counters, registers, FSM, memory (RAM/ROM)",
+            "ADC/DAC, μP/μC அடிப்படைகள், semiconductor devices: thyristor, DIAC, TRIAC, UJT"
+          ]
+        },
+        {
+          "id": "ae9",
+          "title": "அலகு IX: மின்சக்தி மின்னணுவியல் (Power Electronics)",
+          "topics": [
+            "செமிகண்டக்டர் கருவிகள்: SCR, TRIAC, DIAC, GTO, IGBT, MOSFET – characteristics, triggering, protection",
+            "திருத்திகள் (Rectifiers): controlled & uncontrolled, single & three phase, half-wave, full-wave, bridge, input & output waveforms, ripple factor, PF",
+            "Choppers: step-up, step-down, Buck-Boost, Cuk, switching modes, PWM control",
+            "மாற்றி (Inverters): voltage & current source, single & three phase, SPWM, harmonics, resonant inverters",
+            "Cycloconverters, AC voltage controllers",
+            "மின்இயந்திர இயக்கி மேலாண்மை (Drives): speed control of DC & AC motors, V/f control, vector control basics"
+          ]
+        },
+        {
+          "id": "ae10",
+          "title": "அலகு X: மின்சாரப் பயன்பாடும் ஆற்றல் மேலாண்மையும் (Utilization)",
+          "topics": [
+            "மின்விளக்குகள் (Illumination): laws, glare, factory lighting, lamps (incandescent, fluorescent, LED), design of lighting",
+            "மின்வெப்பம் & மின்வெல்லிடம் (Heating & Welding): resistance heating, arc welding, induction heating, applications",
+            "மின்னாற்பகழி (Electrolysis) & electroplating, மின்சார ரயில் (Electric traction): systems, motors, requirements",
+            "இயந்திரத் துவக்கம் (Starting of motors): star-delta, autotransformer, soft starters, VFDs",
+            "ஆற்றல் மேலாண்மை (Energy Management): audits, efficient motors, power factor correction, demand side management",
+            "பாதுகாப்பு: electric shock, earthing, ELCB, safety rules, அவசர நடைமுறைகள்"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "intro": "Unit IV of the TNPSC Group 2/2A Prelims focuses on essential Technical Terms, Administrative vocabulary, and the basics of Official Correspondence required for government exams.",
+  "sections": [
+    {
+      "heading": "Administrative Terms",
+      "points": [
+        "Bureaucracy: The system of government by officials who exercise authority on behalf of the state.",
+        "Delegation: The act of assigning authority and responsibility to a subordinate.",
+        "Hierarchy: A system or organization in which people or groups are ranked one above the other.",
+        "Accountability: The obligation of an individual or organization to account for its activities, accept responsibility for them, and to disclose the results in a transparent manner."
+      ]
+    },
+    {
+      "heading": "Department related terms",
+      "points": [
+        "Cabinet: The supreme decision-making body of the executive branch, comprising senior ministers.",
+        "Ministry: A top-level organizational unit of the government, headed by a Cabinet Minister.",
+        "Department: A distinct part of a government ministry, usually headed by a Secretary, responsible for specific administrative functions.",
+        "Directorate: An administrative body responsible for the execution and implementation of specific government schemes."
+      ]
+    },
+    {
+      "heading": "General and Official terms",
+      "points": [
+        "Memorandum (Memo): A brief written message or record used for internal official communication.",
+        "Circular: An official letter or notice sent to a group of people to provide information or instructions.",
+        "Ordinance: A law promulgated by the executive when the legislature is not in session.",
+        "Warrant: A formal written order issued by a competent authority, such as an arrest warrant or search warrant."
+      ]
+    },
+    {
+      "heading": "Official Correspondence (basics)",
+      "points": [
+        "Salutation: The greeting at the beginning of a formal letter, such as 'Dear Sir/Madam' or 'To, The Collector'.",
+        "Subject Line: A brief summary of the main purpose of the letter, written under the salutation.",
+        "Enclosures: Documents attached with the main letter, usually mentioned at the bottom as 'Encl: ...'.",
+        "Acknowledgment: A formal reply confirming the receipt of a letter, document, or application."
+      ]
+    }
+  ],
+  "keywords": [
+    "Bureaucracy",
+    "Delegation",
+    "Hierarchy",
+    "Accountability",
+    "Cabinet",
+    "Ministry",
+    "Department",
+    "Memorandum",
+    "Circular",
+    "Ordinance",
+    "Warrant",
+    "Salutation"
+  ],
+  "exam_tips": [
+    "Pay close attention to the prefixes and suffixes of administrative terms, as TNPSC often asks to identify the correct meaning of a word based on its root.",
+    "Practice identifying the correct hierarchical order of government bodies (e.g., Ministry, Department, Directorate) as they frequently appear in matching-type questions.",
+    "Memorize the standard formats of official letters, specifically the placement of the Subject line and Enclosures, as they are common in descriptive exams."
+  ],
+  "unit_id": "en4",
+  "title": "Unit IV: Technical Terms"
+}

@@ -1,0 +1,55 @@
+{
+  "intro": "இந்த அலகு TNPSC உதவி பொறியாளர் (AE - EEE) தேர்வுக்கு தேவையான கட்டுப்பாட்டு அமைப்புகளின் (Control Systems) அடிப்படை மற்றும் மேம்பட்ட கருத்துகளை விளக்குகிறது. நேர-கள (Time domain) பகுப்பாய்வு, ஸ்திரத்தன்மை, நிலை-வெளி (State space) பகுப்பாய்வு மற்றும் ஈடுசெய்யிகள் (Compensators) ஆகியவை இதில் அடங்கும்.",
+  "sections": [
+    {
+      "heading": "Block Diagram, Signal Flow Graph & Transfer Function",
+      "points": [
+        "Block diagram மூலம் கட்டுப்பாட்டு அமைப்பின் கூறுகளை எளிதாகப் புரிந்து கொள்ள முடியும்.",
+        "Mason's gain formula மூலம் சிக்னல் ஃப்ளோ கிராஃபின் (SFG) ஒட்டுமொத்த பரிமாற்ற சார்பை (Transfer function) எளிதாகக் கணக்கிடலாம்.",
+        "Transfer function என்பது லாப்லாஸ் டொமைனில் (Laplace domain) அமைப்பின் உள்ளீடு மற்றும் வெளியீட்டுக்கு இடையேயான உறவைக் குறிக்கிறது."
+      ]
+    },
+    {
+      "heading": "தனிவிசை பதில் (Time Domain Analysis)",
+      "points": [
+        "அமைப்பின் order என்பது அதன் வகைக்கெழுச் சமன்பாட்டில் உள்ள அதிகபட்ச வகைக்கெழுவின் (derivative) வரிசையாகும்.",
+        "Steady state error என்பது நீண்ட காலத்திற்குப் பிறகு அமைப்பின் உண்மையான வெளியீட்டிற்கும் விரும்பிய உள்ளீட்டிற்கும் இடையிலான பிழையாகும்.",
+        "Error constants (Kp, Kv, Ka) மூலம் அமைப்பின் நிலையான பிழையை (Steady state error) எளிதாக மதிப்பிடலாம்."
+      ]
+    },
+    {
+      "heading": "ஸ்திரத்தன்மை ஆய்வு (Stability Analysis)",
+      "points": [
+        "Routh-Hurwitz criterion மூலம் அமைப்பின் துருவங்களின் (poles) இருப்பிடத்தை அறியலாம்.",
+        "Root locus வரைபடம் மூலம் gain மாறுபடும்போது அமைப்பின் ஸ்திரத்தன்மை எவ்வாறு மாறுகிறது என்பதை அறியலாம்.",
+        "Bode plot மற்றும் Nyquist criterion ஆகியவை அதிர்வெண்-களத்தில் (Frequency domain) அமைப்பின் ஸ்திரத்தன்மையை மதிப்பிடப் பயன்படுகின்றன."
+      ]
+    },
+    {
+      "heading": "State Space Analysis & Compensators",
+      "points": [
+        "State space analysis என்பது நேர-களத்தில் பல உள்ளீடு-பல வெளியீடு (MIMO) அமைப்புகளைப் பகுப்பாய்வு செய்ய உதவுகிறது.",
+        "Controllability மற்றும் Observability ஆகியவை அமைப்பின் நிலைகளை நாம் கட்டுப்படுத்தவும் கவனிக்கவும் முடியுமா என்பதைச் சரிபார்க்கின்றன.",
+        "PID, PI, PD, Lead-lag compensators ஆகியவை அமைப்பின் செயல்திறனை மேம்படுத்தவும் பிழையைக் குறைக்கவும் பயன்படுகின்றன."
+      ]
+    }
+  ],
+  "keywords": [
+    "Transfer Function",
+    "Mason's Gain Formula",
+    "Routh-Hurwitz",
+    "Root Locus",
+    "Bode Plot",
+    "State Space",
+    "Controllability",
+    "PID Controller",
+    "Steady State Error"
+  ],
+  "exam_tips": [
+    "பரிமாற்ற சார்பு (Transfer Function) மற்றும் பிளாக் வரைபடங்களை (Block diagrams) நன்கு பயிற்சி செய்து கொள்ளுங்கள், இது தேர்வில் அதிகம் கேட்கப்படும் தலைப்பு.",
+    "Routh-Hurwitz மற்றும் Root Locus போன்ற ஸ்திரத்தன்மை ஆய்வுகளுக்கு சூத்திரங்கள் மற்றும் விதிகளை (rules) மனப்பாடம் செய்து எழுதுங்கள்.",
+    "PID, PI, PD மற்றும் Lead-lag compensators-ன் செயல்பாடுகள் மற்றும் பயன்பாடுகளை அட்டவணைப்படுத்தி (table) படிப்பது தேர்வுக்கு மிகவும் உதவும்."
+  ],
+  "unit_id": "ae6",
+  "title": "அலகு VI: கட்டுப்பாட்டு அமைப்புகள் (Control Systems)"
+}
